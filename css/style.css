@@ -17,10 +17,11 @@ header {text-align: center;
 
 main{width: 100%;
      height: auto;}
+     
 .nombre{color:rgb(163, 138, 163);
          font-weight: bold;
          padding: 10px;
-         margin-left: 60px;
+         margin-left: 200px;
          text-align: center;}
         
 .caja {display: flex;
@@ -62,6 +63,7 @@ nav a{display: inline;
        border: none;
        background-color: #ececec;
        box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
+
 .boton a{font-size:x-small;
          color: #6c329f;
          font-weight: bold;}
