@@ -1,0 +1,173 @@
+
+body {font-family: Georgia, 'Times New Roman', Times, serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      text-align: center;
+      background-color:rgb(255, 245, 238);}
+
+header {text-align: center;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+        z-index: 50;
+        background-color: rgb(238, 236, 236);}
+
+main{width: 100%;
+     height: auto;}
+.nombre{color:rgb(163, 138, 163);
+         font-weight: bold;
+         padding: 10px;
+         margin-left: 60px;
+         text-align: center;}
+        
+.caja {display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       gap: 20px; /* separación entre logo y h1 */
+       padding: 10px;
+       height: 150px;}
+
+.logo img{max-height: 170px;
+          height: auto;
+          width: auto;
+          border-radius: 50%;
+          box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
+
+nav{padding: 5px;   
+    max-width: 80%;
+    height: auto;
+    display: inline-block;}
+
+nav a{display: inline;
+      padding: 10px;
+      margin-left: 10pxpx;}
+
+.boton{display: inline-flex;
+       cursor: pointer;
+       text-decoration: none;
+       font-size: 10px;
+       border-radius: 15px;
+       border: none;
+       background-color: #ececec;
+       box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
+
+.menu.boton{display: inline-flex;
+       cursor: pointer;
+       text-decoration: none;
+       font-size: 10px;
+       border-radius: 15px;
+       border: none;
+       background-color: #ececec;
+       box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
+.boton a{font-size:x-small;
+         color: #6c329f;
+         font-weight: bold;}
+.boton:not(:has(#google_translate_element)){font-size: 20px;}
+.boton:active{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+
+
+#google_translate_element{font-size: 0;}
+
+.seccion{background-size: cover;
+         background-position: center;
+         position: relative;
+         padding: 10px 10px;
+         margin-bottom: 20px;}
+.overlay{position: absolute;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background-color: rgba(0,0,0,0.4); /* oscurece imagen para que el texto se lea */}
+
+.contenido{color: #ffffff;
+           max-width: 90%;
+           margin: auto;
+           font-size: 1.6em;
+           line-height: 1.6;/*espacio entre lineas para facilitar la lectura*/
+           padding: 2em;
+           position: relative;
+           z-index: 2; /* Esto asegura que el texto esté por encima de la imagen de fondo (overlay)*/}
+ul{list-style: none;}
+strong {color:rgb(234, 207, 234);}          
+form{max-width: 600px;
+     margin: auto;}
+form input, textarea{width: 100%;
+                     padding: 10px;
+                     margin: 8px 0 20px;
+                     border: 3px solid rgb(117, 106, 120);
+                     border-radius: 20px;
+                     box-shadow: 5px 5px 10px rgb(184, 182, 182), -5px -5px 10px rgb(159, 157, 157);}
+form button{cursor: pointer;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 10px 20px;
+            color: #ffffff;
+            border: 3px solid rgb(117, 106, 120);
+            border-radius: 15px;
+            background-color: rgb(83, 183, 113);
+            box-shadow: 5px 5px 10px rgb(184, 182, 182), -5px -5px 10px rgb(159, 157, 157);}
+form button:active{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+
+footer{padding: 20px;
+       margin: auto;}
+
+.redesSociales{display: flex;
+               justify-content: center;
+               gap: 1.5em;
+               margin-top: 1em;}
+.redesSociales a{border-radius: 15px;
+                 border: none;
+                 background-color: #ececec;
+                 box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;
+                 color: rgb(153, 112, 163);
+                 padding: 0.5em 1em;               
+                 text-decoration: none;
+                 font-weight: bold;
+                 display: flex;
+                 align-items: center;
+                 gap: 0.5em;
+                 transition: background-color 0.3s;}
+.redesSociales a:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+.derechos{font-weight: bold;}
+.diseño{color:#346eca;
+        text-align: right;
+        text-shadow: 5px 5px 10px rgb(141, 140, 140), -5px -5px 10px rgb(150, 144, 144);
+        font-size: small;
+        font-weight: bold;}
+        
+
+           @media (max-width: 768px) 
+               {body{font-size: 16px;}
+
+                header h1 {font-size: 20px;
+                           text-align: center;
+                           padding: 10px;}
+       
+                nav{flex-direction: column;
+                    align-items: center;}
+       
+                nav .boton{display: block;
+                           margin: 5px 0;
+                           width: 90%;
+                           text-align: center;}
+               .seccion {background-size: cover;
+                         background-position: center;}
+       
+               .contenido{padding: 20px;
+                          font-size: 16px;}
+       
+               form input, form textarea, form button
+                        {width: 100%;
+                         font-size: 16px;}
+       
+               footer .redesSociales a
+                        {display: block;
+                         margin: 10px 0;
+                         font-size: 16px;}}
+
+
+
