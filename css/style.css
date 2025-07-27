@@ -1,10 +1,10 @@
 
-body {font-family: Georgia, 'Times New Roman', Times, serif;
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #636262;
       text-align: center;
-      background-color:rgb(255, 245, 238);}
+      background-color:rgb(232, 224, 235);}
 
 header {text-align: center;
         top: 0;
@@ -17,8 +17,11 @@ header {text-align: center;
 
 main{width: 100%;
      height: auto;}
-     
-.nombre{color:rgb(163, 138, 163);
+main a{color: rgb(211, 144, 241); 
+       text-decoration: none;
+       transition: color 0.3s;}
+    
+.nombre{color:rgb(163, 138, 161);
          font-weight: bold;
          padding: 10px;
          margin-left: 200px;
@@ -40,57 +43,74 @@ main{width: 100%;
 nav{padding: 5px;   
     max-width: 80%;
     height: auto;
-    display: inline-block;}
-
+    display: inline-flex;}
+ #lingvanex-translator {
+      margin-bottom: 20px;}
 nav a{display: inline;
-      padding: 10px;
-      margin-left: 10pxpx;}
+      padding: 5px;
+      margin : 5px;
+      text-decoration: none;
+      color: rgb(153, 112, 163);}
+nav a:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px -10px rgb(150, 144, 144);}
 
 .boton{display: inline-flex;
        cursor: pointer;
        text-decoration: none;
-       font-size: 10px;
-       border-radius: 15px;
-       border: none;
+       font-size: x-small;
+       border-radius: 15px;    
        background-color: #ececec;
-       box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
-
+       box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;
+       transition: background-color 0.3s;}      
 .menu.boton{display: inline-flex;
-       cursor: pointer;
-       text-decoration: none;
-       font-size: 10px;
-       border-radius: 15px;
-       border: none;
-       background-color: #ececec;
-       box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
+            cursor: pointer;
+            text-decoration: none;
+            font-size: x-small;
+            border-radius: 15px;          
+            background-color: #ececec;
+            box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;}
 
-.boton a{font-size:x-small;
-         color: #6c329f;
-         font-weight: bold;}
+.botonT{display: inline-flex;
+        cursor: pointer;
+        color: rgb(153, 112, 163);        
+        justify-content: center;       
+        align-items: center;
+        text-decoration: none;
+        font-size: large;
+        padding: 5px;
+        font-weight: bold;
+        width: 240px;
+        height: auto;
+        margin: 5px;
+        border-radius: 15px;
+        background-color: #ececec;
+        box-shadow: 5px 5px 10px rgb(99, 97, 97), -5px -5px 10px gray;
+        transition: background-color 0.3s;}
+
+.botonT:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
 .boton:not(:has(#google_translate_element)){font-size: 20px;}
-.boton:active{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+.boton:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
 
 
-#google_translate_element{font-size: 0;}
+#google_translate_element .boton{font-size: 0;}
 
 .seccion{background-size: cover;
          background-position: center;
          position: relative;
          padding: 10px 10px;
-         margin-bottom: 20px;}
+         margin: auto;}
 .overlay{position: absolute;
          top: 0;
          left: 0;
          width: 100%;
          height: 100%;
          background-color: rgba(0,0,0,0.4); /* oscurece imagen para que el texto se lea */}
-
+         
+#contacto .contenido{margin-right: 600px;}
 .contenido{color: #ffffff;
            max-width: 90%;
            margin: auto;
            font-size: 1.6em;
-           line-height: 1.6;/*espacio entre lineas para facilitar la lectura*/
-           padding: 2em;
+           line-height: 1.6;/*espacio entre lineas para facilitar la lectura*/          
            position: relative;
            z-index: 2; /* Esto asegura que el texto esté por encima de la imagen de fondo (overlay)*/}
 ul{list-style: none;}
@@ -99,23 +119,41 @@ form{max-width: 600px;
      margin: auto;}
 form input, textarea{width: 100%;
                      padding: 10px;
-                     margin: 8px 0 20px;
-                     border: 3px solid rgb(117, 106, 120);
+                     margin: 8px 0 20px;                   
                      border-radius: 20px;
                      box-shadow: 5px 5px 10px rgb(184, 182, 182), -5px -5px 10px rgb(159, 157, 157);}
-form button{cursor: pointer;
-            text-decoration: none;
-            font-size: 30px;
-            padding: 10px 20px;
-            color: #ffffff;
-            border: 3px solid rgb(117, 106, 120);
-            border-radius: 15px;
-            background-color: rgb(83, 183, 113);
-            box-shadow: 5px 5px 10px rgb(184, 182, 182), -5px -5px 10px rgb(159, 157, 157);}
-form button:active{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+button {cursor: pointer;
+        text-decoration: none;
+        border: none;
+        font-size: 25px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;     
+        width: 150px;
+        height: auto;
+        padding: 5px 10px;
+        margin: 10px 0;
+        background-color:#ececec;
+        color: rgb(153, 112, 163);           
+        border-radius: 15px;        
+        box-shadow: 5px 5px 10px rgb(184, 182, 182), -5px -5px 10px rgb(159, 157, 157);
+        transition: background-color 0.3s;}
+form button:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+
+.galeria{display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+         gap: 20px;
+         padding: 20px;}
+.galeria img {width: 300px;
+              height: 190px;
+              object-fit: cover;}
+img:active{cursor: pointer;
+           opacity: 90%; 
+           transform: scale(1.3);
+           box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
 
 footer{padding: 20px;
-       margin: auto;}
+       margin: auto;
+       background-color: rgb(238, 236, 236);}
 
 .redesSociales{display: flex;
                justify-content: center;
@@ -134,10 +172,10 @@ footer{padding: 20px;
                  gap: 0.5em;
                  transition: background-color 0.3s;}
 .redesSociales a:hover{box-shadow: inset 5px 5px 10px rgb(141, 140, 140), inset -5px 10px rgb(150, 144, 144);}
+
 .derechos{font-weight: bold;}
-.diseño{color:#346eca;
+.diseño{color:#7a558b;
         text-align: right;
-        text-shadow: 5px 5px 10px rgb(141, 140, 140), -5px -5px 10px rgb(150, 144, 144);
         font-size: small;
         font-weight: bold;}
         
