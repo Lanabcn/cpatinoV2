@@ -49,7 +49,7 @@ nav{padding: 5px;
     display: inline-flex;}
 
 nav a{display: inline-flex;
-      padding: 5px;
+      padding: 1px 7px;
       margin-right: 35px;
       text-decoration: none;
       color: rgb(153, 112, 163);}
@@ -221,8 +221,7 @@ footer{padding: 20px;
                      {body{font-size: 16px;}
                      .caja{padding: 10px;}
                      header h1 {font-size: 20px;
-                            text-align: center;
-                            padding: 10px;}
+                            text-align: center;}
                      nav{flex-direction: column;
                          align-items: center;}
                      nav .boton{display: block;
@@ -243,20 +242,20 @@ footer{padding: 20px;
                             margin: 10px 0;
                             font-size: 16px;}}
                      /* Menú hamburguesa accesible en móvil */       
-                    .menu{display: none;} /* se activa tu botón móvil/hamburguesa */
-                     .menu.activo{display: flex; 
-                                 flex-direction: column;}
+                   /* .menu{display: none;} /* se activa tu botón móvil/hamburguesa */
+                    /* .menu.activo{display: flex; 
+                                 flex-direction: column;}*/
                             
               /*Pantallas grandes / medianas (481px–1024px)*/
-                     @media screen and (min-width: 481px) and (max-width: 1024px) 
+                    /* @media screen and (min-width: 481px) and (max-width: 1024px) 
                      {header .caja{flex-wrap: wrap; 
                                    justify-content: space-between;}
                      nav{justify-content: center;}}
                     
 
                   /*Escritorio normal (>=1025px)*/
-                      @media screen and (min-width: 1025px) 
-                       {.contenido { max-width: 70%; margin: auto;}}
+                     /*@media screen and (min-width: 1025px) 
+                       {.contenido { max-width: 70%; margin: auto;}}*/
 
 
 
