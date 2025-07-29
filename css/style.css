@@ -197,7 +197,7 @@ footer{padding: 20px;
         font-size: small;
         font-weight: bold;}
 
-          /* /*Dispositivos pequeños (hasta 480px)
+          /*Dispositivos pequeños (hasta 480px)*/
               @media screen and (max-width: 480px) 
               {header .caja{flex-direction: column; 
                             align-items: center;}
@@ -210,11 +210,11 @@ footer{padding: 20px;
                             width: 90%; 
                             margin: 8px 0; 
                             font-size: 1em;}/* 1em = 16px */
-             /* .seccion{padding: 10px;}
+              .seccion{padding: 10px;}
               .contenido{font-size: 1.2em;
                      line-height: 1.4;}/*1.4 veces el tamaño de fuente de ese elemento*/
-             /*footer .redesSociales{flex-direction: column; 
-                                    gap: 10px;}}*/
+             footer .redesSociales{flex-direction: column; 
+                                    gap: 10px;}}
 
               /*Dispositivos medianos (hasta 768px)*/       
                      @media (max-width: 768px) 
@@ -243,20 +243,20 @@ footer{padding: 20px;
                             margin: 10px 0;
                             font-size: 16px;}}
                      /* Menú hamburguesa accesible en móvil */       
-                    /* .menu{display: none;} /* se activa tu botón móvil/hamburguesa */
-                     /*.menu.activo{display: flex; 
-                                 flex-direction: column;}*/
+                    .menu{display: none;} /* se activa tu botón móvil/hamburguesa */
+                     .menu.activo{display: flex; 
+                                 flex-direction: column;}
                             
               /*Pantallas grandes / medianas (481px–1024px)*/
-                    /* @media screen and (min-width: 481px) and (max-width: 1024px) 
+                     @media screen and (min-width: 481px) and (max-width: 1024px) 
                      {header .caja{flex-wrap: wrap; 
                                    justify-content: space-between;}
-                     nav{justify-content: center;}}*/
+                     nav{justify-content: center;}}
                     
 
                   /*Escritorio normal (>=1025px)*/
-                      /* @media screen and (min-width: 1025px) 
-                       {.contenido { max-width: 70%; margin: auto;}}*/
+                      @media screen and (min-width: 1025px) 
+                       {.contenido { max-width: 70%; margin: auto;}}
 
 
 
