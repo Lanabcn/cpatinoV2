@@ -6,7 +6,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="../css/style.css" rel="stylesheet" type="text/css"/>
     <title>Consulta Estética Personalizada / Centro Cecilia Patiño Barcelona</title>
-    <script defer="" src="js/main.js"></script>
+    <script defer src="../js/main.js"></script>
 </head>
 <body>
   <header>
@@ -20,7 +20,7 @@
          <a href="#" class="boton"><div id="google_translate_element"></div></a>
     </div> 
     <nav>
-      <button aria-label="menúHam" class="menuToggle">☰</button>
+       <button aria-label="Abrir menú de navegación" class="menuToggle">☰</button>
       <div class="menuNav">
         <a class="boton" href="../index.html">INICIO</a>
         <a class="boton" href="./servicios.html">SERVICIOS</a>
@@ -43,7 +43,8 @@
                   title="Introduce solo letras y espacios">
 
           <label for="email">Correo electrónico: <span style="color:red;">*</span></label>
-           <input type="email" id="email" name="email"required 
+           <input type="email" id="email" name="email"required
+                  pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" 
                   placeholder="nombre@correo.com">
  
           <label for="mensaje">Mensaje o pregunta: <span style="color:red;">*</span></label>
